@@ -35,11 +35,11 @@ function newQuote( ) {
       authorText.textContent = quote.author;
   }
 
-  if (quote.text.length > 120) {
-      quoteText.classList.add('long-quote');
-  } else {
-      quoteText.classList.remove('long-quote');
-  }
+//   if (quote.text.length > 120) {
+//       quoteText.classList.add('long-quote');
+//   } else {
+//       quoteText.classList.remove('long-quote');
+//   }
 
   quoteText.textContent = quote.text;
   complete();
