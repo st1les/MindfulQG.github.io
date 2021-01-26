@@ -1,0 +1,147 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quote-container {
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    background-image: url(bckgrnd.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quote-container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: #ffcdf880;
+    box-shadow: 0 10px 10px 0px #2c244e6e;
+    position: relative;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.quote-text {
+    font-size: 2.75rem;
+}
+
+.long-quote {
+    font-size: 2rem;
+}
+
+.fa-brain {
+    color: #4b4b4b60;
+    font-size: 2rem;
+}
+
+.quote-author {
+    margin-top: 50px;
+    font-size: 1.75rem;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1rem;
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.021);
+    outline: none;
+    padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+    box-shadow: 0 0.2rem rgba(7, 25, 73, 0.425);
+    font-style: oblique;
+}
+
+button:hover {
+    filter: brightness(95%)
+}
+
+button:active {
+    transform: translate(0, 0.5rem);
+    box-shadow: 0 0.1rem rgba(7, 73, 57, 0.651);
+}
+
+.instagram-button {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 0.849) 0%, rgba(253, 29, 29, 0.822) 50%, rgba(252, 176, 69, 0.87) 100%);
+}
+
+.fa-instagram {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    line-height: 17px;
+}
+
+#new-quote {
+    background-color: rgb(250, 162, 235);
+    color: white;
+}
+
+.loader {
+border: 16px solid #dae7ff; /* Light grey */
+border-top: 16px solid #00ffb33b; /* Blue */
+border-radius: 50%;
+width: 120px;
+height: 120px;
+animation: spin 2s linear infinite;
+}
+
+#khusan {
+    display: flex;
+    padding:5px 2px;
+    text-align:center;
+    bottom:0;
+    position:absolute; 
+    right:0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+  
+
+/* Media Query */
+@media screen and (max-width: 1000px) {
+    .quote-container {
+        margin: auto 10px;
+    }
+
+    .quote-text {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
